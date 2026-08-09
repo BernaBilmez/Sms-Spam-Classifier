@@ -28,7 +28,7 @@ Messaging platforms need to automatically filter spam SMS messages without block
 | Logistic Regression (default) | 95.2% | 67% | 50 |
 | **Logistic Regression (balanced)** | **97.8%** | **91%** | **14** |
 
-![Model comparison](images/three_model_comparison.png)
+![Model comparison](three_model_comparison.png)
 
 **Key finding:** the first model looked strong at 96.7% accuracy, but was actually missing a quarter of real spam messages. Simply trying a more complex algorithm (Logistic Regression) made this *worse*, not better. The fix was addressing the underlying class imbalance directly — reducing missed spam from 37 to 14 while also achieving the highest overall accuracy.
 
